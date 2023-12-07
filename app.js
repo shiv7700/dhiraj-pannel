@@ -1,3 +1,13 @@
+const password = "1234567899";
+const ask = prompt("Enter password");
+
+if (ask === null || ask !== password) {
+  alert("Incorrect password. The page will be hidden.");
+  document.body.style.display = "none";
+} else {
+  document.body.style.display = "block";
+}
+
 const form = document.querySelector("form");
 const allMess = document.querySelector(".all-data");
 const result = document.querySelector(".result");
