@@ -73,3 +73,27 @@ form input {
 .ins {
   margin: 2% 0px 0px 5%;
 }
+
+.ip-header {
+  background-color: lightskyblue;
+  padding: 20px;
+}
+
+.ip-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 3%;
+  gap: 10px;
+}
+
+.ip-result > div {
+  height: 150px;
+  width: 200px;
+  padding: 13px;
+  background-color: #15172b;
+  color: white;
+  border-radius: 20px;
+}
