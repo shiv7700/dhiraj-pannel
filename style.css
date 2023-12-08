@@ -51,18 +51,18 @@ form input {
 
 .result {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 90%;
   gap: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 1% auto;
 }
 
 .result > div {
-  height: 200px;
-  width: 250px;
+  height: 130px;
+  width: 100%;
   background-color: #15172b;
   color: white;
   padding: 16px;

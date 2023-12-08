@@ -1,12 +1,12 @@
 const password = "1234567899";
-const ask = prompt("Enter password");
+// const ask = prompt("Enter password");
 
-if (ask === null || ask !== password) {
-  alert("Incorrect password. The page will be hidden.");
-  document.body.style.display = "none";
-} else {
-  document.body.style.display = "block";
-}
+// if (ask === null || ask !== password) {
+//   alert("Incorrect password. The page will be hidden.");
+//   document.body.style.display = "none";
+// } else {
+//   document.body.style.display = "block";
+// }
 
 const form = document.querySelector("form");
 const allMess = document.querySelector(".all-data");
@@ -31,6 +31,8 @@ async function allData() {
     let p2 = document.createElement("p");
     let p3 = document.createElement("p");
     let p4 = document.createElement("p");
+    p3.style.color = "#8A2BE2";
+    p3.style.fontWeight = "bold";
     id.innerHTML = `id : ${data[i].id}`;
     p1.innerHTML = `name : ${data[i].name}`;
     p2.innerHTML = `email : ${data[i].email}`;
