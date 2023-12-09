@@ -8,6 +8,11 @@ if (ask === null || ask !== password) {
   document.body.style.display = "block";
 }
 
+const home = document.querySelector(".button-54");
+home.addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
+
 const form = document.querySelector("form");
 const allMess = document.querySelector(".all-data");
 const result = document.querySelector(".result");

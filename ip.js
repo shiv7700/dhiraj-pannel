@@ -1,3 +1,8 @@
+const home = document.querySelector(".button-54");
+home.addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
+
 (function () {
   const url = "https://6526591e917d673fd76c101e.mockapi.io/blame";
   fetch(url)
