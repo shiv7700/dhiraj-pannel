@@ -19,21 +19,6 @@ header {
   padding: 20px;
 }
 
-.open {
-  margin: 10% 0% 0% 10%;
-}
-
-.open a {
-  text-decoration-line: none;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border: 2px solid black;
-  padding: 20px;
-  border-radius: 20px;
-}
-
 .message {
   background-color: lightcoral;
   color: white;
@@ -130,4 +115,131 @@ form input {
 
 .back-home {
   margin: 1% 0px 0px 5%;
+}
+
+.admin-container {
+  margin: 20px;
+}
+
+.admin-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+}
+
+.panel {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.messages,
+.visitors {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.messages {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.visitors {
+  background-color: #27ae60;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.admin-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admin-container p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* asa */
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  /*   cursor: grab; */
+  background: #0d1225;
+}
+#container-hammer {
+  width: 100px;
+  height: 140px;
+}
+svg {
+  width: 100px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  transform-origin: 50% 50%;
+  z-index: 2;
+  cursor: grab;
+}
+.shadow {
+  opacity: 0;
+}
+#shadow {
+  filter: blur(8px);
+  fill: #7dafff;
+}
+#shadow2 {
+  filter: blur(40px);
+  fill: #4089ff;
+}
+.shadow.charged {
+  transition: 300ms opacity ease;
+  transform-origin: 50% 50%;
+  animation: glowing 0.8s linear infinite alternate;
+}
+.thunder {
+  fill: none;
+  stroke: #94bdff;
+  stroke-width: 6;
+  stroke-dashoffset: 3000;
+  stroke-dasharray: 3000;
+}
+.thunder-shadow {
+  fill: none;
+  stroke: #4089ff;
+  stroke-width: 6;
+  stroke-dashoffset: 3000;
+  stroke-dasharray: 3000;
+  filter: blur(20px);
+}
+
+@keyframes glowing {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+}
+
+.white {
+  background-color: whitesmoke;
 }
